@@ -2,6 +2,7 @@
 .wrapper{
   margin: auto;
   max-width: 750px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -11,16 +12,20 @@ body{
 }
 
 .back{
-  background-size: cover;
+  background-size:contain;
 }
 
 main{
 margin: 0px;
 padding: 20px 20px;
-background-image: url(calm-sea.jpg);
+background-image: url(/spiderman.jpg)
+
 }
 
-
+section{
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
 
 main section{
   padding: 10px;
@@ -36,7 +41,7 @@ main section{
 
 header{
   margin: 0px;
-  background-color: rgba(18, 0, 119, 0.568);
+  background-image: url(/banner.jpg);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -57,35 +62,42 @@ h1{
 header h2{
   color: antiquewhite;
   font-family: Impact, Haettenschweiler;
+  letter-spacing: 2px;
   padding-left: 5px;
   font-size: 22px;
   text-align: left;
 }
 
 main h2{
-  color:rgba(18, 0, 119, 0.568);
+  color:rgba(0, 245, 225, 0.829);
   font-family: Impact;
   font-size: 30px;
   letter-spacing: 3px;
 }
 
 h3{
-  color: rgba(18, 0, 119, 0.568);
+  color: gold;
   font-family: impact;
   font-size: 23px;
   letter-spacing: 1px;
+}
+
+.titles{
+  color:cyan;
 }
 
 p{
   font-family: cursive;
   font-size: 15px;
   font-weight: bold;
+  color: white;
 }
 
 ul li{
   font-family: cursive;
   font-size: 15px;
   font-weight: bold;
+  color: white;
 }
 
 ol{
@@ -93,6 +105,7 @@ ol{
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
+  color: gold;
 }
 
 .linky{
@@ -100,10 +113,16 @@ ol{
   font-size: 15px;
   font-weight: bold;
 }
+a:hover{
+  color:lawngreen;
+}
+a:active{
+  color: yellow;
+}
 
 
 footer{
-  background-color:  rgba(18, 0, 119, 0.568);
+  background-image:  url(/banner.jpg);
   color: gold;
   text-align: center;
   height: 30px;
@@ -175,21 +194,27 @@ form label{
   font-family: cursive;
   font-size: 15px;
   font-weight: bold;
+  color: gold;
 }
 
 form button{
   font-family: cursive;
   font-size: 15px;
   font-weight: bold;
+  background-color: black;
+  color: gold;
+  border-color: gold;
 }
 
 form textarea{
   height: 150px;
 }
 
+
+
 /*media query*/
 
-@media all and (min-width: 600px){
+@media all and (min-width: 812px){
   .group{
     flex-direction: row;
   }
@@ -203,7 +228,7 @@ header{
     font-size: 20px;
   }
 
-  header nav ul li: last-child a{
+  header nav ul li:last-child a{
     margin-right: 0;
   }
 
@@ -241,13 +266,219 @@ header{
 
   .wrapper{
     margin: auto;
-    width: 750px;
+    max-width: 750px;
+  }
+  .item{
+    flex:1;
+    margin: 8px;
   }
 
   .linky{
     font-size: 20px;
   }
+  
 
 }
 body { overflow-x: hidden; width: 100vw;}
 
+/* @media all and (max-width: 818px){
+  .wrapper{
+    margin: auto;
+    max-width: 650px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  body{
+    margin: 0px;
+    padding-top: 0px;
+  }
+  
+ 
+  
+ 
+  
+  section{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+  main section{
+    padding: 10px;
+    margin: auto;
+    max-width: 550px;
+  }
+
+  
+  header{
+    margin: 0px;
+    background-image: url(/banner.jpg);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+  }
+  
+  h1{
+    color: gold;
+    font-weight: bold;
+    margin-top: 0px;
+    font-family: fantasy;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding-left: 5px;
+    text-align: left;
+  }
+  
+  header h2{
+    color: antiquewhite;
+    font-family: Impact, Haettenschweiler;
+    letter-spacing: 2px;
+    padding-left: 5px;
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  main h2{
+    color:rgba(0, 245, 225, 0.829);
+    font-family: Impact;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  
+  h3{
+    color: gold;
+    font-family: impact;
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+  
+  .titles{
+    color:cyan;
+  }
+  
+  p{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  ul li{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  ol{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: gold;
+  }
+  
+  .linky{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  a:hover{
+    color:lawngreen;
+  }
+  a:active{
+    color: yellow;
+  }
+  
+  
+  footer{
+    background-color:  rgba(18, 0, 119, 0.568);
+    color: gold;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+  }
+  
+  .footer-font{
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  
+  footer h2{
+    margin-top: 0px;
+  }
+  
+  /*navigation*/
+  
+  /* header nav{
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  header nav ul{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;  
+  }
+  
+  header nav ul li{
+    list-style-type: none;
+  }
+  
+  header nav ul li a{
+    color: gold;
+    margin: 0 15px 0 0;
+    text-decoration: none;
+    font-family: impact;
+    font-size: 16px;
+  }
+  
+  header nav ul li:last-child a{
+    margin-right: 30px;
+  }
+  
+  /*grouping and items*/
+  
+  /* .group{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .item{
+    flex:1;
+    margin: 20px;
+  } */
+  
+  /*forms*/
+  
+  /* form input,
+  form textarea{
+    font-family: cursive;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  form label{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    color: gold;
+  }
+  
+  form button{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    color: gold;
+    border-color: gold;
+  }
+  
+  form textarea{
+    height: 150px;
+  }
+  body { overflow-x: hidden; width: 100vw;}
+} */  
